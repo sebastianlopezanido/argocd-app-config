@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: myapp-encoder
 spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nanajanashia/argocd-app:1.2
+        image: selopezavalian/api-encoder64:prod-0.1.19
         ports:
         - containerPort: 8080
