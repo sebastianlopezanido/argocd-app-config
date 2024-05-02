@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-encoder
+  name: myapp-the-strokes
 spec:
   selector:
     matchLabels:
