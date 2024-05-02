@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: selopezavalian/api-encoder64:prod-0.1.19
+        image: lopeza74/the-strokes-api:02
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
